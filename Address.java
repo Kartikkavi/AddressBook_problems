@@ -14,7 +14,16 @@ class Contacts{
          ZipCode = zipCode;
          PhoneNum = phoneNum;
          Email = email;
-               }
+
+   System.out.println("First Name--"+firstName);
+   System.out.println( "Last Name---"+lastName);
+   System.out.println("Addres----"+Address);
+   System.out.println("City-----"+City);
+   System.out.println("State------"+State);
+   System.out.println("Zip code-------"+ZipCode);
+   System.out.println("Mobile Number--------"+PhoneNum);
+    System.out.println( "Mail ID---------"+Email);
+                   }
 }
 
 public class Address {
@@ -45,7 +54,21 @@ public class Address {
       long phoneNum = Input2("Enter phone number: ");
       String email = Input1("Enter your EMail ID: ");
 
-
-      Contacts Kartik =  new Contacts(firstName, lastName, address, city, state, zipCode, phoneNum, email);
-   }
+	System.out.println("If want to edit contac num then enter 1 else enter 2");
+	Scanner Answer = new Scanner(System.in);
+	int A =Answer.nextInt();
+	if (A == 1);{
+	Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the new number");
+ long newphoneNum=sc.nextInt();
+ 
 }
+	 if (A == 2);{
+	System.out.println("OK");}
+      Contacts Kartik =  new Contacts(firstName, lastName, address, city, state, zipCode, phoneNum, email);
+
+	}
+
+}
+
+
